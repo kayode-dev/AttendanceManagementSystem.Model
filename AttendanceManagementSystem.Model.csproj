@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DB93797F-2F8C-472A-8C6F-B2DDE1E3BE5B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AttendanceMangementSystem.Model</RootNamespace>
+    <AssemblyName>AttendanceMangementSystem.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\Documents\Visual Studio 2019\Project\Web\SMS\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\..\Documents\Visual Studio 2019\Project\Web\SMS\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AMSDbContext.cs" />
+    <Compile Include="Attendance.cs" />
+    <Compile Include="Course.cs" />
+    <Compile Include="CourseAllocation.cs" />
+    <Compile Include="Department.cs" />
+    <Compile Include="Faculty.cs" />
+    <Compile Include="Lecturer.cs" />
+    <Compile Include="LecturersCourse.cs" />
+    <Compile Include="Level.cs" />
+    <Compile Include="Migrations\202112301704140_InitialMigration.cs" />
+    <Compile Include="Migrations\202112301704140_InitialMigration.designer.cs">
+      <DependentUpon>202112301704140_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202201262005036_SecondMigrationDEPTandCourse.cs" />
+    <Compile Include="Migrations\202201262005036_SecondMigrationDEPTandCourse.designer.cs">
+      <DependentUpon>202201262005036_SecondMigrationDEPTandCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202201262231363_SecondMigrationDEPTandCourse1.cs" />
+    <Compile Include="Migrations\202201262231363_SecondMigrationDEPTandCourse1.designer.cs">
+      <DependentUpon>202201262231363_SecondMigrationDEPTandCourse1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202242244565_LecturersCourseInitial.cs" />
+    <Compile Include="Migrations\202202242244565_LecturersCourseInitial.designer.cs">
+      <DependentUpon>202202242244565_LecturersCourseInitial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205052056369_CourseTableUpdate.cs" />
+    <Compile Include="Migrations\202205052056369_CourseTableUpdate.designer.cs">
+      <DependentUpon>202205052056369_CourseTableUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205080933579_updatetoStudentandLecturerTables.cs" />
+    <Compile Include="Migrations\202205080933579_updatetoStudentandLecturerTables.designer.cs">
+      <DependentUpon>202205080933579_updatetoStudentandLecturerTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205101819148_UpdateLEctCourseTable.cs" />
+    <Compile Include="Migrations\202205101819148_UpdateLEctCourseTable.designer.cs">
+      <DependentUpon>202205101819148_UpdateLEctCourseTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205112112009_NewcourseCartItemTable.cs" />
+    <Compile Include="Migrations\202205112112009_NewcourseCartItemTable.designer.cs">
+      <DependentUpon>202205112112009_NewcourseCartItemTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205182040529_NewCourseAllocatationTAble.cs" />
+    <Compile Include="Migrations\202205182040529_NewCourseAllocatationTAble.designer.cs">
+      <DependentUpon>202205182040529_NewCourseAllocatationTAble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205201459461_AttendanceTable.cs" />
+    <Compile Include="Migrations\202205201459461_AttendanceTable.designer.cs">
+      <DependentUpon>202205201459461_AttendanceTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205261349174_UpdateToForeignKeys.cs" />
+    <Compile Include="Migrations\202205261349174_UpdateToForeignKeys.designer.cs">
+      <DependentUpon>202205261349174_UpdateToForeignKeys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205271946446_AttendancetableUpdate.cs" />
+    <Compile Include="Migrations\202205271946446_AttendancetableUpdate.designer.cs">
+      <DependentUpon>202205271946446_AttendancetableUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202206241051030_LecturerTableUpdate.cs" />
+    <Compile Include="Migrations\202206241051030_LecturerTableUpdate.designer.cs">
+      <DependentUpon>202206241051030_LecturerTableUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Semester.cs" />
+    <Compile Include="StudentDetail.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202112301704140_InitialMigration.resx">
+      <DependentUpon>202112301704140_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201262005036_SecondMigrationDEPTandCourse.resx">
+      <DependentUpon>202201262005036_SecondMigrationDEPTandCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201262231363_SecondMigrationDEPTandCourse1.resx">
+      <DependentUpon>202201262231363_SecondMigrationDEPTandCourse1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202242244565_LecturersCourseInitial.resx">
+      <DependentUpon>202202242244565_LecturersCourseInitial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205052056369_CourseTableUpdate.resx">
+      <DependentUpon>202205052056369_CourseTableUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205080933579_updatetoStudentandLecturerTables.resx">
+      <DependentUpon>202205080933579_updatetoStudentandLecturerTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205101819148_UpdateLEctCourseTable.resx">
+      <DependentUpon>202205101819148_UpdateLEctCourseTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205112112009_NewcourseCartItemTable.resx">
+      <DependentUpon>202205112112009_NewcourseCartItemTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205182040529_NewCourseAllocatationTAble.resx">
+      <DependentUpon>202205182040529_NewCourseAllocatationTAble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205201459461_AttendanceTable.resx">
+      <DependentUpon>202205201459461_AttendanceTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205261349174_UpdateToForeignKeys.resx">
+      <DependentUpon>202205261349174_UpdateToForeignKeys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205271946446_AttendancetableUpdate.resx">
+      <DependentUpon>202205271946446_AttendancetableUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206241051030_LecturerTableUpdate.resx">
+      <DependentUpon>202206241051030_LecturerTableUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
