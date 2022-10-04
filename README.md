@@ -1,2 +1,2 @@
 # AttendanceManagementSystem.Model
-Database Models for my Attendance Management System using entity framework ORM
+Database Models for my Attendance Management System using C# and entity framework ORM
